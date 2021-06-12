@@ -1,0 +1,7 @@
+<library path="lib/libforce_local_planner">
+	<class name="force_local_planner/ForceLocalPlanner" type="force_local_planner::ForceLocalPlanner" base_class_type="nav_core::BaseLocalPlanner">
+		<description>
+			The force_local_planner plugin
+		</description>
+	</class>
+</library>

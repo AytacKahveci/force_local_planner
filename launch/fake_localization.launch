@@ -1,0 +1,10 @@
+
+<launch>
+
+  <!-- Run fake localization compatible with AMCL output -->
+  <node pkg="fake_localization" type="fake_localization" name="fake_localization" output="screen" >
+    <remap from="base_pose_ground_truth" to="/ground_truth_odom"/>
+    <param name="global_frame_id " type="string" value="map" />
+  </node>
+
+</launch>

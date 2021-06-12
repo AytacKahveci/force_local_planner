@@ -1,0 +1,7 @@
+<launch>
+    <arg name="map_path" default="$(find force_local_planner)/maps/pal_office/"/>
+    <arg name="map_file" default="map.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_path)/$(arg map_file)">
+        <param name="frame_id" value="map"/>
+    </node>
+</launch>

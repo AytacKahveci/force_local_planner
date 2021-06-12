@@ -1,0 +1,31 @@
+ForceLocalPlanner:
+
+ odom_topic: /mobile_base_controller/odom
+ 
+ # Robot parameters
+ mass: 40.0
+ Izz: 0.55
+ b: 0.0
+ wheel_radius: 0.0985
+ wheel_seperation: 0.4044
+ h: 0.275
+ 
+ # Velocity Limits
+ max_linear_vel: 1.0
+ min_linear_vel: -1.0
+ max_angular_vel: 0.3
+ min_angular_vel: -0.3
+
+ # GoalTolerance
+ xy_goal_tolerance: 0.1
+ yaw_goal_tolerance: 0.1
+ global_plan_prune_distance: 1.0
+ max_global_plan_lookahead_dist: 2.0
+
+ # Planner parameters
+ k1: 10.0
+ k1_close: 8.0
+ k2: 5.0
+ min_obstacle_dist: 2.0
+ sim_time: 3.0
+ sim_granularity: 0.1
